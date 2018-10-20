@@ -1,0 +1,117 @@
+/*** SUPERFISH ERESSENTIAL STYLES ***/
+.sf-menu, .sf-menu * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.sf-menu li {
+	position: relative;
+}
+.sf-menu ul {
+	position: absolute;
+	display: none;
+	top: 100%;
+	left: 0;
+	z-index: 99;
+}
+.sf-menu > li {
+	float: left;
+}
+.sf-menu li:hover > ul,
+.sf-menu li.sfHover > ul {
+	display: block;
+}
+
+.sf-menu a {
+	display: block;
+	position: relative;
+}
+.sf-menu ul ul {
+	top: 0;
+	left: 100%;
+}
+
+/*** SUPERFISH SKIN ***/
+$bg-first-level: #4C4C4C;
+$bg-second-level: #666666;
+
+.sf-menu ul {
+	background-color: $bg-first-level;
+	padding: 9px 0;
+	width: 189px;
+}
+.sf-menu a {	
+	padding: 11px 17px 7px;
+	color: #00577B;
+	text-decoration: none;
+	zoom: 1; /* IE7 */
+}
+.sf-menu li {
+	font-size: 16px;
+	margin-left: 39px;
+	-webkit-transition: background .2s;
+	transition: background .2s;
+}
+.sf-menu li:first-child {
+	margin: 0;
+}
+.sf-menu ul li {
+	margin: 0;
+	font-size: 13px;
+	line-height: 1.3;
+	font-weight: 600;
+}
+
+.sf-menu > li:last-child > ul {
+	left: auto;
+	right: 0;
+	ul {
+		left: auto;
+		right: 100%;
+	}
+}
+
+.sf-menu ul li a {
+	color: #F4D679;
+	padding: 5px 17px;
+}
+.sf-menu ul ul {
+	margin: 0;
+}
+.sf-menu li:hover,
+.sf-menu li.sfHover {	
+	/* only transition out, not in */
+	-webkit-transition: none;
+	transition: none;
+}
+.sf-menu > li > a:hover,
+.sf-menu > li.current-menu-item > a,
+.sf-menu > li.current-menu-parent > a,
+.sf-menu > li.current-menu-ancestor > a {
+	color: #7F7F7F;
+}
+
+.sf-menu > li.sfHover > a {
+	background-color: $bg-first-level;
+	color: #F4D679;
+}
+.sf-menu > li > ul > li > a:hover,
+.sf-menu li > ul > li.sfHover > a {
+	background-color: $bg-second-level;
+	color: #fff;
+}
+.sf-menu ul ul {
+	margin-top: -9px;
+	background-color: $bg-second-level;
+}
+.sf-menu ul ul li a:hover,
+.sf-menu ul ul li.sfHover > a {
+	background-color: #7F7F7F;
+	color: #fff;
+}
+.sf-menu ul li a.sf-with-ul {
+	background-image: url(images/arrow-nav.png);
+	background-position: right 8px;
+	background-repeat: no-repeat;
+	padding-right: 28px;
+}

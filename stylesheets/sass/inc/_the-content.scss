@@ -1,0 +1,252 @@
+$margin-bottom: 1em;
+
+.the-content {
+	
+	
+	/* -- Font -- */
+	font-size: $content-font-size;
+	line-height: $content-line-height;
+	
+	a {
+		color: $ijo-gelap;
+	}
+	
+	/* -- Image -- */
+	img {
+		vertical-align: baseline;
+	}
+	
+	/* -- Heading -- */
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 700;
+	}
+	h1 {
+		font-size: 34px;
+		margin: 0.8em 0 0.8em;
+		padding: 0;
+		line-height: 1.2;
+	}
+	h2 {
+		font-size: 30px;
+		margin: 0.8em 0 0.8em;
+		padding: 0;
+		line-height: 1.2;
+	}
+	h3 {
+		font-size: 20px;
+		margin: 0.8em 0 0.3em;
+	}
+	h4 {
+		font-size: 18px;
+		margin: 0.8em 0 0;
+	}
+	h5 {
+		
+	}
+	h6 {
+		
+	}
+	
+	/* -- List -- */	
+	ol {		
+		list-style: decimal;
+	}	
+	ol, ul {
+		//padding-left: 1em;
+	}
+	ol {
+		margin-left: 1em;
+	}
+	ol li,
+	ul li {		
+		
+	}
+	ul > li {
+		padding-left: 0.65em;		
+		position: relative;		
+	}
+	li ul {
+		padding-left: 1em;
+	}	
+	
+	ul > li:before {
+		content: "\2022";
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 1em;
+		vertical-align: top;
+		color: $ijo;
+	}
+	
+	
+	/* -- Margin -- */
+	blockquote,
+	table,
+	p,
+	ul,
+	ol,
+	dd,
+	pre,
+	iframe,
+	.flxmap-container,
+	hr {
+		margin-bottom: $margin-bottom;
+	}
+	ul ul,
+	ol ol,
+	ul ol,
+	ol ul {
+		margin-bottom: 0;
+	}
+	blockquote {
+		font-size: 24px;
+		font-weight: 400;
+		line-height: (36 / 24);		
+		margin-bottom: 1.8em;
+		margin-top: 1.55em;
+	}
+	blockquote p {
+		margin-bottom: 0.46em;
+	}
+	blockquote > p:last-child {
+		margin-bottom: 0;
+	}
+	blockquote cite {
+		display: block;
+		font-size: 14px;
+		font-style: normal;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	hr {
+		border: 0;
+		margin: 2em 0;
+		border-bottom: 2px solid $hr-border-color;
+	}	
+	
+	table {
+		margin-bottom: 50px;
+	}
+	
+}
+
+
+
+img,
+img.size-auto,
+img.size-full,
+img.size-large,
+img.size-medium,
+.attachment img {
+	max-width: 100%; /* When images are too wide for containing element, force them to fit. */
+	height: auto; /* Override height to match resized width for correct aspect ratio. */
+}
+.alignleft,
+img.alignleft {
+	display: inline;
+	float: left;
+	margin: 3px 25px 0 0;
+}
+.alignright,
+img.alignright {
+	display: inline;
+	float: right;
+	margin: 3px 0 0 25px;
+}
+.aligncenter,
+img.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.wp-caption {
+	margin-bottom: 19px;
+	max-width: 100% !important; /* prevent too-wide images from breaking layout */
+	padding:0;
+	text-align: left;
+}
+.wp-caption img {
+	margin-top: 12px;
+	vertical-align: top;
+}
+.wp-caption p.wp-caption-text {
+    font-size: 16px;   
+	font-style: italic;
+	margin-top: 15px;
+	color: #000;
+	font-weight: 700;
+}
+.wp-smiley {
+	margin: 0;
+}
+.gallery {
+	margin: 0 auto 18px;
+}
+.gallery .gallery-item {
+	float: left;
+	margin-top: 0;
+	text-align: center;
+	width: 33%;
+}
+.gallery-columns-2 .gallery-item {
+	width: 50%;
+}
+.gallery-columns-4 .gallery-item {
+	width: 25%;
+}
+.gallery img {
+	border: 2px solid #cfcfcf;
+}
+.gallery-columns-2 .attachment-medium {
+	max-width: 92%;
+	height: auto;
+}
+.gallery-columns-4 .attachment-thumbnail {
+	max-width: 84%;
+	height: auto;
+}
+.gallery .gallery-caption {
+	color: #888;
+	font-size: 12px;
+	margin: 0 0 12px;
+}
+.gallery dl {
+	margin: 0;
+}
+.gallery img {
+	border: 10px solid #f1f1f1;
+}
+.gallery br+br {
+	display: none;
+}
+
+.page-link {
+	clear: both;
+	color: #000;
+	font-weight: bold;
+	margin: 0 0 22px 0;
+	word-spacing: 0.5em;
+}
+.page-link a:link,
+.page-link a:visited {
+	background: #f1f1f1;
+	color: #333;
+	font-weight: normal;
+	padding: 0.5em 0.75em;
+	text-decoration: none;
+}
+
+.page-link a:active,
+.page-link a:hover {
+	color: #ff4b33;
+}
+
+.the-content > h1:first-child,
+.the-content > h3:first-child,
+.the-content > h2:first-child {
+	margin-top: 0;
+}

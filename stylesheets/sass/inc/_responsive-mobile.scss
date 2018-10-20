@@ -1,0 +1,53 @@
+$phone-max-width:  480px;
+
+@media (max-width: $phone-max-width) {
+	
+	.container {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	
+	#header-content {
+		max-width: none;
+	}
+	
+	.footer-left,
+	.social-links,
+	.footer-right {
+		float: none;
+		width: auto;
+		text-align: center;
+	}
+	.social-links li {
+		display: inline-block;
+		float: none;
+		vertical-align: top;
+		margin: 5px 5px 10px;
+		a {
+			margin: 0;
+		}
+	}
+	
+	.the-content .gform_wrapper .two-cols .ginput_container,
+	.the-content .gform_wrapper .two-cols .gfield_label,
+	.gform_wrapper .two-cols .ginput_container,
+	.gform_wrapper .two-cols .gfield_label {
+		float: none;
+		width: auto;
+		text-align: left;
+		padding-left: 0;
+	}
+	.the-content .gform_wrapper .two-cols label.gfield_label,
+	.gform_wrapper .two-cols label.gfield_label {
+		text-align: left;
+		padding-bottom: 10px;
+	}
+	
+}
+
+@media (max-width: 380px) {
+	.card-entry {
+		width: auto;
+		display: block;
+	}
+}

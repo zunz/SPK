@@ -1,0 +1,264 @@
+/*
+Nama Project: SPK Pemilihan Kambing Potong RPH Bp. Zaini
+Author: Zunan Arif R.
+*/
+
+/*==============================================================
+## Imports
+==============================================================*/	
+	@import 'compass';
+	@import 'inc/meyer-reset';
+	@import 'inc/pt-sans';
+	@import 'inc/variables';	
+	//@import 'inc/mixins';
+	@import 'inc/basic-styles';	
+	@import 'inc/the-content';
+	@import 'inc/font-awesome';
+	
+	
+/*==============================================================
+## General Styles
+==============================================================*/
+	
+	/* -- Superfish -- */
+	.sf-menu, .sf-menu * {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	.sf-menu li {
+		position: relative;
+	}
+	.sf-menu ul {
+		position: absolute;
+		display: none;
+		top: 100%;
+		left: 0;
+		z-index: 99;
+	}
+	.sf-menu > li {
+		float: left;
+	}
+	.sf-menu li:hover > ul,
+	.sf-menu li.sfHover > ul {
+		display: block;
+	}
+
+	.sf-menu a {
+		display: block;
+		position: relative;
+	}
+	.sf-menu ul ul {
+		top: 0;
+		left: 100%;
+	}
+	
+	button,
+	a {
+		@include transition(all 0.2s ease);
+	}
+	
+	span.red,
+	a.red,
+	.the-content span.red,
+	.the-content a.red {
+		color: $red;
+	}
+	
+	.the-content .button,
+	.button {
+		background: $ijo;
+		color: #fff;
+		display: inline-block;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 1.2;
+		border: 0;
+		font-family: inherit;
+		padding: 7px 20px 9px;
+		cursor: pointer;
+		border-radius: 5px;
+		&:hover {
+			background: #519133;
+		}
+	}
+	
+	.the-content .button-red,
+	.button-red {
+		background: $red;
+		&:hover {
+			background: #db2e00;
+		}
+	}
+	
+	.align-right {
+		text-align: right;
+	}
+	
+	.sembunyikan {
+		display: none;
+	}
+	
+	
+/*==============================================================
+## Header
+==============================================================*/
+	#header {
+		background: $ijo;
+	}
+	#logo-wrap {
+		float: left;
+		padding: 10px 0 5px;
+	}
+	#logo {
+		max-width: 240px;
+	}
+	#header-content {
+		float: right;
+		width: 750px;
+		padding: 55px 0 0;
+	}
+	#nav {
+		float: left;
+		
+		.sf-menu li {
+			font-size: 18px;
+			font-weight: 700;
+			margin-left: 20px;
+			a {				
+				color: #fff;
+				padding: 5px 12px 10px;				
+			}
+			ul {
+				background: #5e8e47;
+				width: 180px;
+				padding: 4px 0;
+				li {
+					margin: 0;
+					font-size: 16px;
+					font-weight: 400;
+				}
+				a {
+					padding: 5px 12px;					
+				}
+			}
+		}
+		.sf-menu li.sfHover > a,
+		.sf-menu li a:hover {
+			color: #d4ffc0;
+		}
+	}
+	#header-right {
+		float: right;
+		padding-top: 2px;
+	}
+	#header-content .button {
+		background: #fff;
+		color: $ijo;
+		padding: 5px 15px 7px;
+	}
+	
+	
+
+/*==============================================================
+## Main
+==============================================================*/	
+	#main {
+		min-height: 500px;
+	}
+	
+	.main-content {
+		float: right;
+		width: 77%;
+		padding: 40px 0;
+	}
+	.main-content-full {
+		float: none;
+		width: auto;
+	}
+	
+	/* Form 
+	----------------- */
+	.field-wrap {
+		max-width: 400px;
+		padding-bottom: 10px;
+		label {
+			display: block;
+			font-weight: 700;
+			padding: 3px 0;
+		}
+		.button {
+			margin-top: 10px;
+		}
+	}
+	.list-var {
+		max-width: 700px;
+		table {
+			margin: 0;
+		}
+	}
+	.msg-box {
+		background: $ijo;
+		color: #fff;
+		border-radius: 5px;
+		padding: 10px 10px;
+		margin-bottom: 20px;
+		font-size: 16px;
+		max-width: 400px;
+		p {
+			margin: 0;
+		}
+	}
+	.msg-box-full {
+		max-width: none;
+	}
+	.warning-box {
+		background: #fff200;
+		color: #000;
+	}
+	
+/*==============================================================
+## Sidebar
+==============================================================*/
+	.sidebar {
+		float: left;
+		width: 19.5%;
+		padding: 80px 0;
+	}
+	.widget {
+		.widget-title {
+		
+		}
+		li {
+			font-size: 17px;
+			font-weight: 700;
+			a {
+				display: block;
+				border-bottom: 1px solid $ijo;
+				padding: 10px 2px 5px;
+			}
+		}
+	}
+	
+	
+/*==============================================================
+## Footer
+==============================================================*/
+	#footer {
+		background: $ijo;
+		color: #ffffff;
+		padding: 10px 0;
+		text-align: right;
+		a {
+			color: #ffffff;
+			text-decoration: underline;
+			font-weight: 700;
+		}
+	}
+	
+
+
+/*==============================================================
+## Responsive
+==============================================================*/	
+	//@import 'inc/responsive';
